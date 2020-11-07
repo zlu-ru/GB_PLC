@@ -1,0 +1,112 @@
+
+.header {
+    height: 100px;
+    border-bottom: 1px solid #ececec;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.17);
+}
+
+.header .container {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background: url(../images/logo.png) no-repeat;
+    padding-left: 64px;
+    width: 165px;
+    font-size: 27px;
+    line-height: 51px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+}
+
+.logo span {
+    font-weight: 900;
+    color: #f16d7f;
+}
+
+.search--panel {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    margin-left: 38px;
+}
+
+.search--panel--selectbtn {    
+    background-color: #cdcdcc;    
+    border-radius: 3px 0 0 3px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #222222;
+    padding: 12px;
+}
+
+.search--panel--selectbtn:hover {
+    cursor: pointer;
+}
+
+.search--panel--searchbtn {
+    width: 38px;
+    height: inherit;
+    border: none;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #a4a4a4;
+    border-left: 1px solid #e6e6e6;;
+}
+
+.search--panel--input {
+    height: 40px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: inherit;
+}
+
+.search--panel--input::placeholder{
+    padding-left: 16px;
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #a4a4a4;
+}
+
+.account--panel {
+    display: flex;        
+    margin-left: auto;
+    align-items: center;
+    height: inherit;
+}
+
+.go--basket {
+    display: block;
+    width: 32px;
+    height: 18px;
+    margin-right: 25px;
+}
+
+.accountbtn {
+    background-color: #f16d7f;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    padding: 12px 15px 12px 20px;
+}
+
+.accountbtn i {
+    padding-left: 8px;
+}
+
+.accountbtn:hover {
+    cursor: pointer;
+}

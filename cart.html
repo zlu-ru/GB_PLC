@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                BRAN<span>D</span>
+            </div>
+            <form class="search--panel">
+                <div class="search--panel--selectbtn">Browse <i class="fas fa-caret-down"></i></div>
+                <input class="search--panel--input" type="text" placeholder="Search for Item...">
+                <button class="search--panel--searchbtn"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="account--panel">
+                <a class="go--basket" href="#"><img src="images/cart.png" alt="cart"></a>
+                <div class="accountbtn">My account <i class="fas fa-caret-down"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main--nav">
+        <a class="main--na--na-item" href="#">Home</a>
+        <a class="main--na--na-item" href="#">Man</a>
+        <a class="main--na--na-item" href="#">Women</a>
+        <a class="main--na--na-item" href="#">Kids</a>
+        <a class="main--na--na-item" href="#">Accoseriese</a>
+        <a class="main--na--na-item" href="#">Featured</a>
+        <a class="main--nav--item" href="#">Hot Deals</a>
+    </nav>
+
+    <div class="new--arrival--wrapper">
+        <div class="new--arrival container">
+            <div class="new--arrival--header">New Arrivals</div>
+            <nav class="new--arrival--path">
+                <a href="">Home</a>
+                <span>/</span>
+                <a href="">Men</a>
+                <span>/</span>
+                <a href="">New Arrivals</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="shoping--cart container">
+        <div class="shoping--cart--row shoping--cart--row--head">
+            <div>Product Details</div>
+            <div>unite Price</div>
+            <div>Quantity</div>
+            <div>shipping</div>
+            <div>Subtotal</div>
+            <div>ACTION</div>
+        </div>
+        <section class="shoping--cart--row">
+            <div class="shoping--cart--row--product">
+                <div class="shoping--cart--product--img">
+                    <img src="images/product_1.png" alt="product--img">
+                </div>
+                <div class="shoping--cart--product--info">
+                    <div class="product--info--header">Mango People T-shirt</div>
+                    <div class="product--info--detail">
+                        <div class="product--info--detail--row">
+                            <div>Color:</div>
+                            <div>Red</div>
+                        </div>
+                        <div class="product--info--detail--row">
+                            <div>Size:</div>
+                            <div>XII</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price">$150</div>
+            <input class="quantity" value="2">
+            <div class="shipping">free</div>
+            <div class="subtotal">$300</div>
+            <div class="action">
+                <i class="fas fa-times-circle"></i>
+            </div>
+        </section>
+        <section class="shoping--cart--row">
+            <div class="shoping--cart--row--product">
+                <div class="shoping--cart--product--img">
+                    <img src="images/product_2.png" alt="product--img">
+                </div>
+                <div class="shoping--cart--product--info">
+                    <div class="product--info--header">Mango People T-shirt</div>
+                    <div class="product--info--detail">
+                        <div class="product--info--detail--row">
+                            <div>Color:</div>
+                            <div>Red</div>
+                        </div>
+                        <div class="product--info--detail--row">
+                            <div>Size:</div>
+                            <div>XII</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price">$150</div>
+            <input class="quantity" value="2">
+            <div class="shipping">free</div>
+            <div class="subtotal">$300</div>
+            <div class="action">
+                <i class="fas fa-times-circle"></i>
+            </div>
+        </section>
+        <section class="shoping--cart--row">
+            <div class="shoping--cart--row--product">
+                <div class="shoping--cart--product--img">
+                    <img src="images/product_3.png" alt="product--img">
+                </div>
+                <div class="shoping--cart--product--info">
+                    <div class="product--info--header">Mango People T-shirt</div>
+                    <div class="product--info--detail">
+                        <div class="product--info--detail--row">
+                            <div>Color:</div>
+                            <div>Red</div>
+                        </div>
+                        <div class="product--info--detail--row">
+                            <div>Size:</div>
+                            <div>XII</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price">$150</div>
+            <input class="quantity" value="2">
+            <div class="shipping">free</div>
+            <div class="subtotal">$300</div>
+            <div class="action">
+                <i class="fas fa-times-circle"></i>
+            </div>
+        </section>
+    </div>
+
+    <div class="shopping--cart--button--wrapper container">
+        <div class="shopping--cart--button">cLEAR SHOPPING CART</div>
+        <div class="shopping--cart--button">cONTINUE sHOPPING</div>
+    </div>
+
+    <div class="check--out--wrapper container">
+        <div class="shopping--address--wrapper">
+            <form>
+                <h2>Shipping Adress</h2>
+                <select class="shopping--data" placeholder="Bangladesh">
+                    <option value="Balgladesh">Balgladesh</option>
+                    <option value="Russia">Russia</option>
+                    <option value="England">England</option>
+                </select>
+                <input type="text" pattern="[0-9]{5}" class="shopping--data" placeholder="State">
+                <input type="text" class="shopping--data" placeholder="Postcode / Zip">
+                <button>get a quote</button>
+            </form>
+        </div>
+        <div class="coupon--discont--wrapper">
+            <h2>coupon discount</h2>
+            <form action="#">
+                <label for="coupon--discont--label">Enter your coupon code if you have one</label>
+                <input id="coupon--discont--label" type="text" class="shopping--data" placeholder="State">
+                <button>Apply coupon</button>
+            </form>
+
+        </div>
+        <div class="grand--total-wrapper">
+            <div class="grand--total--sub">
+                <span>Sub total</span>
+                <span>$900</span>
+            </div>
+            <div class="grand--total--grand">
+                <span>GRAND TOTAL</span>
+                <span>$900</span>
+            </div>
+            <button>proceed to checkout</button>
+        </div>
+    </div>
+
+
+    <div class="subscribe--wrapper">
+        <div class="subscribe--block container">
+            <div class="subscribe--review">
+                <div class="subscribe--review--photo"></div>
+                <div class="subscribe--review--info">
+                    <div class="sri--text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+                    <div class="sri--location">
+                        <div class="sri--name">Bin Burhan</div>
+                        <div class="sri--location">Dhaka, Bd</div>
+                    </div>
+                    <div class="sri--switcher">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribtion">
+                <div class="subscribe--info">
+                    <div class="subscribe--info--header">Subscribe</div>
+                    <div class="subscribe--info--text">FOR OUR NEWLETTER AND PROMOTION</div>
+                </div>
+                <div class="subscribe--form">
+                    <input type="email" placeholder="Enter Your Email">
+                    <div>Subscribe</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer--head container">
+            <div class="footer--head--left">
+                <div class="logo">
+                    BRAN<span>D</span>
+                </div>
+                <div class="footer--brand--info">
+                    <div class="fbi--text">Objectively transition extensive data rather than cross functional
+                        solutions.
+                        Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
+                        syndicate an expanded array of processes and cross-unit partnerships.
+                    </div>
+                    <div class="fbi--text">
+                        Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                    </div>
+                </div>
+            </div>
+            <div class="footer--head--right">
+                <div class="footer--brand--links">
+                    <div class="footer--brand--links--header">COMPANY</div>
+                    <a href="#">Home </a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer--brand--links">
+                    <div class="footer--brand--links--header">INFORMATION</div>
+                    <a href="#">Tearms & Condition</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">How to Buy</a>
+                    <a href="#">How to Sell</a>
+                    <a href="#">Promotion</a>
+                </div>
+                <div class="footer--brand--links">
+                    <div class="footer--brand--links--header">COMPANY</div>
+                    <a href="#">Home </a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Contact</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer--copyright">
+            <div class="footer--copyright--wrapper container">
+                <div class="footer--copyright--text">&copy; 2020 Brand All Rights Reserved.</div>
+                <div class="footer--copyrightlinks">
+                    <div class="footer--copyrightlink">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="footer--copyrightlink">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="footer--copyrightlink">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="footer--copyrightlink">
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="footer--copyrightlink">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

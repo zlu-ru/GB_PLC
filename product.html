@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                BRAN<span>D</span>
+            </div>
+            <form class="search--panel">
+                <div class="search--panel--selectbtn">Browse <i class="fas fa-caret-down"></i></div>
+                <input class="search--panel--input" type="text" placeholder="Search for Item...">
+                <button class="search--panel--searchbtn"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="account--panel">
+                <a class="go--basket" href="#"><img src="images/cart.png" alt="cart"></a>
+                <div class="accountbtn">My account <i class="fas fa-caret-down"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main--nav">
+        <a class="main--na--na-item" href="#">Home</a>
+        <a class="main--na--na-item" href="#">Man</a>
+        <a class="main--na--na-item" href="#">Women</a>
+        <a class="main--na--na-item" href="#">Kids</a>
+        <a class="main--na--na-item" href="#">Accoseriese</a>
+        <a class="main--na--na-item" href="#">Featured</a>
+        <a class="main--nav--item" href="#">Hot Deals</a>
+    </nav>
+
+    <div class="new--arrival--wrapper">
+        <div class="new--arrival container">
+            <div class="new--arrival--header">New Arrivals</div>
+            <nav class="new--arrival--path">
+                <a href="">Home</a>
+                <span>/</span>
+                <a href="">Men</a>
+                <span>/</span>
+                <a href="">New Arrivals</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="product--image--wrapper">
+        <div class="product--image container">
+            <img src="images/productimage1.png" alt="product--image">
+
+        </div>
+        <div class="img--scroller--wrapper">
+            <div class="img--scroller">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="img--scroller">
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="product--data--wrapper container">
+        <div class="product--data">
+            <div class="product--header">WOMEN COLLECTION</div>
+            <div class="product--name">Moschino Cheap And Chic</div>
+            <div class="product--descr">Compellingly actualize fully researched processes before proactive outsourcing.
+                Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
+                parallel core competencies rather than exceptional portals.</div>
+            <div class="product--details">
+                <div>
+                    <span class="product--param">MATERIAL:</span>
+                    <span class="product--value">COTTON</span>
+                </div>
+                <div>
+                    <span class="product--param">DESIGNER:</span>
+                    <span class="product--value">BINBURHAN</span>
+                </div>
+            </div>
+            <div class="product--price">$561</div>
+            <form action="" class="product--order">
+                <div class="product--order--unit">
+                    <label for="product--color" class="product--order--label">CHOOSE COLOR</label>
+                    <div class="product--order--select--wrapper">
+                        <div class="product--order--color"></div>
+                        <i class="fas fa-angle-down"></i>
+                        <select class="product--order--select" name="" id="product--color">
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product--order--unit">
+                    <label for="product--size" class="product--order--label">CHOOSE SIZE</label>
+                    <div class="product--order--select--wrapper">
+                        <i class="fas fa-angle-down"></i>
+                        <select class="product--order--select" name="" id="product--size">
+                            <option value="xss">XSS</option>
+                            <option value="xs">XS</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                            <option value="xxl">XXL</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product--order--unit">
+                    <label class="product--order--label" for="product--count">QUANTITY</label>
+                    <div class="product--order--select--wrapper">
+                        <input class="product--order--select" type="number" id="product--count" name="product--count"
+                            min="1" max="10" value="2">
+                    </div>
+                </div>
+                <button class="product--order--btn">
+                    <img src="images/addToCart2.svg" alt="add--to--cart">
+                    Add To Cart
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="featured container">
+        <h2>you may like also</h2>
+        <div class="featured--goods">
+            <div class="featured--goods--item product1">
+                <div class="item--img"></div>
+                <div class="item--add">
+                    <button>
+                        <img src="images/addToCart.png" alt="addtocart">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="item--name">Mango People T-shirt</div>
+                <div class="item--price--wrapper">
+                    <div class="item--price">$52.00</div>
+                    <div class="item--rating">
+                        <img src="images/stars.png" alt="itemrating">
+                    </div>
+                </div>
+            </div>
+            <div class="featured--goods--item product2">
+                <div class="item--img"></div>
+                <div class="item--add">
+                    <button>
+                        <img src="images/addToCart.png" alt="addtocart">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="item--name">Mango People T-shirt</div>
+                <div class="item--price--wrapper">
+                    <div class="item--price">$52.00</div>
+                    <div class="item--rating">
+                        <img src="images/stars.png" alt="itemrating">
+                    </div>
+                </div>
+            </div>
+            <div class="featured--goods--item product3">
+                <div class="item--img"></div>
+                <div class="item--add">
+                    <button>
+                        <img src="images/addToCart.png" alt="addtocart">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="item--name">Mango People T-shirt</div>
+                <div class="item--price--wrapper">
+                    <div class="item--price">$52.00</div>
+                    <div class="item--rating">
+                        <img src="images/stars.png" alt="itemrating">
+                    </div>
+                </div>
+            </div>
+            <div class="featured--goods--item product4">
+                <div class="item--img"></div>
+                <div class="item--add">
+                    <button>
+                        <img src="images/addToCart.png" alt="addtocart">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="item--name">Mango People T-shirt</div>
+                <div class="item--price--wrapper">
+                    <div class="item--price">$52.00</div>
+                    <div class="item--rating">
+                        <img src="images/stars.png" alt="itemrating">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subscribe--wrapper">
+        <div class="subscribe--block container">
+            <div class="subscribe--review">
+                <div class="subscribe--review--photo"></div>
+                <div class="subscribe--review--info">
+                    <div class="sri--text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+                    <div class="sri--location">
+                        <div class="sri--name">Bin Burhan</div>
+                        <div class="sri--location">Dhaka, Bd</div>
+                    </div>
+                    <div class="sri--switcher">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribtion">
+                <div class="subscribe--info">
+                    <div class="subscribe--info--header">Subscribe</div>
+                    <div class="subscribe--info--text">FOR OUR NEWLETTER AND PROMOTION</div>
+                </div>
+                <div class="subscribe--form">
+                    <input type="email" placeholder="Enter Your Email">
+                    <div>Subscribe</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer--head container">
+            <div class="footer--head--left">
+                <div class="logo">
+                    BRAN<span>D</span>
+                </div>
+                <div class="footer--brand--info">
+                    <div class="fbi--text">Objectively transition extensive data rather than cross functional
+                        solutions.
+                        Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                        Intrinsicly
+                        syndicate an expanded array of processes and cross-unit partnerships.
+                    </div>
+                    <div class="fbi--text">
+                        Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically
+                        optimize.
+                    </div>
+                </div>
+            </div>
+            <div class="footer--head--right">
+                <div class="footer--brand--links">
+                    <div class="footer--brand--links--header">COMPANY</div>
+                    <a href="#">Home </a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer--brand--links">
+                    <div class="footer--brand--links--header">INFORMATION</div>
+                    <a href="#">Tearms & Condition</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">How to Buy</a>
+                    <a href="#">How to Sell</a>
+                    <a href="#">Promotion</a>
+                </div>
+                <div class="footer--brand--links">
+                    <div class="footer--brand--links--header">COMPANY</div>
+                    <a href="#">Home </a>
+                    <a href="#">Shop</a>
+                    <a href="#">About</a>
+                    <a href="#">How It Works</a>
+                    <a href="#">Contact</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer--copyright">
+            <div class="footer--copyright--wrapper container">
+                <div class="footer--copyright--text">&copy; 2020 Brand All Rights Reserved.</div>
+                <div class="footer--copyrightlinks">
+                    <div class="footer--copyrightlink">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="footer--copyrightlink">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="footer--copyrightlink">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="footer--copyrightlink">
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="footer--copyrightlink">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
