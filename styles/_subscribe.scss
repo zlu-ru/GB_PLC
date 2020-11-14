@@ -1,0 +1,178 @@
+.subscribeWrapper {
+    min-height: 438px;
+    background: url(../images/subscribe.png) no-repeat center bottom, #ccc;
+    background-blend-mode: overlay;
+    background-size: cover;
+    display: flex;
+
+    @media (max-width: 1023px) {
+        min-height: initial;
+    }
+
+    .subscribe {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+        min-height: inherit;
+
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        .subscribe__review {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            @media (max-width: 555px) {
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+        
+            .subscribe__photo {
+                width: 83px;
+                height: 83px;    
+
+                @media (max-width: 555px) {
+                    margin-bottom: 28px;
+                }
+            }
+        
+            .subscribe__info {  
+                padding: 0 28px;
+                
+                @media (max-width: 1023px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                }
+        
+                .subscribe__text {
+                    max-width: 386px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    font-style: italic;
+                    letter-spacing: 0.025em;
+                    color: #222224;
+                }
+        
+                .subscribe__name {
+                    padding-top: 19px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    letter-spacing: 0.025em;
+                    color: #f16d7f;
+                }
+        
+                .subscribe__location {
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: #222224;
+                    box-sizing: border-box;
+                }
+        
+                .subscribe__switcher {
+                    width: 140px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 41px;
+        
+                    & div {
+                        width: 38px;
+                        border-top: 4px solid #d6d6d6;
+        
+                        &:hover {
+                            border-top: 4px solid #f16d7f;
+                            cursor: pointer;
+                        }
+                    }    
+                }
+            }    
+        }
+
+        .divider {
+            background: white;
+            width: 1px;
+            min-height: inherit;
+
+            @media (max-width: 1023px) {
+                display: none;
+            }
+        }
+
+        .subscribForm { 
+            margin-left: 15px;            
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #222224;      
+            text-align: center;
+            
+            @media (max-width: 1023px) {
+                margin-top: 20px;
+            } 
+        
+            &__title {
+                    font-size: 24px;                   
+                    line-height: 44px;            
+            }
+        
+            &__text {
+                    line-height: 24px;
+                    font-size: 14px;
+                    margin-bottom: 35px;
+            }
+
+            input {
+                background-color: #e1e1e1;                
+                border-top-left-radius: 23px;
+                border-bottom-left-radius: 23px;
+                border: none;
+                outline: none;
+                width: 282px;
+                height: 46px;
+                padding: 5px 15px;
+                float: left;
+
+                @media (max-width: 555px) {
+                    float: none;
+                    border-radius: 23px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            button {
+                height: 46px;
+                background-color: #f16d7f;
+                border-radius: 0px 23px 23px 0px;
+                border: none;
+                outline: none;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.025em;
+                color: #ffffff;
+                text-align: center;
+                padding: 0 20px;
+
+                @media (max-width: 555px) {                    
+                    border-radius: 23px;
+                }
+
+                &::placeholder {
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0.025em;
+                    color: #222224;
+                }
+            }
+        }
+    }
+   
+}

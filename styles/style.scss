@@ -1,0 +1,112 @@
+@import "../bootstrap-4.5.3/scss/bootstrap.css";
+@import "footer";
+@import "subscribe";
+@import "copyright";
+@import "breadCrumps";
+@import "checkout";
+@import "topNav";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {    
+    border-bottom: 1px solid #ececec;
+    padding: 32px 0;
+
+    .header__nav {
+        padding: 0;
+        height: inherit;
+    }
+
+    .search__panel {
+        height: 39px;               
+
+        .header_browse__btn {
+            background-color: #cdcdcc;    
+            border-radius: 3px 0px 0px 3px;
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.025em;
+            color: #222222;
+            height: inherit;            
+        }
+
+        .header__search__line {
+            border-color: #e6e6e6;
+            box-sizing: border-box;
+            border-left: none;
+        }
+
+        .header__search_btn {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+            color: #a4a4a4;
+            border-color: #e6e6e6;
+        }
+    }
+    .account__panel {
+        display: flex;
+
+        .account__btn {
+            background-color: #f16d7f;
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+            color: #ffffff;
+            margin-left: 26px;
+            border-radius: 3px;
+        }
+    }
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-weight: 700;
+        color: #f16d7f;
+    }
+
+    .logo__img {
+        width: 59px;
+        height: 51px;
+        margin-right: 12px;
+    }
+
+    &_leftLocation {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 10px 5px;
+
+        .header__nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .header__logo {
+                margin-bottom: 10px;
+            }
+
+            .account__panel{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

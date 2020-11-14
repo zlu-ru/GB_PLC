@@ -1,0 +1,105 @@
+.checkoutWrapper {
+    margin: 90px auto;
+
+    .rowData {
+        border-bottom: 1px solid #e8e8e8;
+
+        .row__title {
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #222222;
+            padding-top: 33px;
+            padding-bottom: 33px;
+        }
+
+        .checkoutForm {
+            font-size: 13px;
+            font-weight: 400;
+            margin-bottom: 79px;
+
+            .checkout__info {
+                margin-bottom: 30px;                       
+
+                .check__title {           
+                    line-height: 2;    
+                    text-transform: uppercase;
+                    color: #222222;
+                }
+                
+                .check__text {                
+                    line-height: 20px;        
+                    color: #b3b2b2;
+                    margin-bottom: 30px;
+                }
+
+                .checkout__link {
+                    display: block;            
+                    line-height: 20px;            
+                    color: #b3b2b2;
+                }
+
+                .checkout__select {
+                    font-size: 12px;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    color: #222222;
+
+                    input {
+                        margin-right: 14px;
+                    }
+                }          
+            }   
+
+            .checkout__info_last {
+                margin-bottom: 40px;
+            }
+            
+            .checkout__btn_transparent {
+                width: 180px;
+                height: 50px;
+                background-color: #ffffff;
+                border: 1px solid #eaeaea;
+                font-size: 14px;
+                line-height: 1.2;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #4a4a4a;
+                cursor: pointer;
+                outline: none;
+            }     
+
+            a {
+                font-size: 14px;
+                line-height: 20px;
+                color: #222222;
+                text-decoration: none;
+            }
+
+            .checkout_attention {
+                color: #ff0d0d;
+            }
+
+            .checkout__authLabel {
+                width: 100%;
+                margin-bottom: 12px;
+        }
+
+            .checkout__authData {
+                width: 390px;
+                height: 45px;
+                padding-left: 10px;
+                padding-right: 10px;
+                outline: none;
+                margin-bottom: 19px;
+                background-color: #ffffff;
+                border: 1px solid #eaeaea;
+
+                @media (max-width: 835px) {
+                    width: 100%;
+                }
+            }        
+        }
+    }
+}

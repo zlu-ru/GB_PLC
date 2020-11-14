@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+
+    <header class="header">
+        <!-- Content here -->
+        <nav class="navbar header__nav container">
+            <div class="logo">
+                <img src="images/logo.png" class="logo__img" alt="logo" loading="lazy">
+                bran<span>D</span>
+            </div>
+            <form class="form-inline my-2 my-lg-0 search__panel">
+                <div class="input-group mb-3">
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle header_browse__btn" href="#" id="navbarDropdown1"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Browse
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" href="#">Action1</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Action2</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Action3</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control header__search__line" placeholder="Search for Item ..."
+                        aria-label="Search for Item" aria-describedby="button-addon2">
+                    <div class="input-group-append ">
+                        <button class="btn btn-outline-secondary header__search_btn" type="button" id="button-addon2"><i
+                                class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="account__panel">
+                <img src="images/addToCartBlack.svg" alt="addToCart">
+                <div class="nav-item dropdown ">
+
+                    <a class="nav-link dropdown-toggle account__btn" href="#" id="navbarDropdown2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        My Account
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#">Action1</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Action2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Action3</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <nav>
+        <ul class="nav justify-content-center topNav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">man</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">women</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">kids</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Accoseriese</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Featured</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Hot Deals</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <section class="breadCrumpsHeader">
+        <div class="container breadCrumpsHeaderWrapper">
+            <div>
+                New Arrivals
+            </div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Men</a></li>
+                    <li class="breadcrumb-item">New Arrivals</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <main class="container checkoutWrapper">
+        <div class="row rowData">
+            <div class="col-12 row__title">
+                <span>01.</span>Shipping Adress
+            </div>
+            <div class="col-md-6">
+                <form class="checkoutForm">
+                    <div class="checkout__info">
+                        <div class="check__title">Check as a guest or register</div>
+                        <div class="check__text">Register with us for future convenience</div>
+                    </div>
+
+                    <div class="checkout__info">
+                        <div class="checkout__select">
+                            <input type="radio" id="guest" value="guest" name="checkoutType">
+                            <label for="guest">checkout as guest</label>
+                        </div>
+                        <div class="checkout__select">
+                            <input type="radio" id="register" value="register" name="checkoutType" checked>
+                            <label for="register">register</label>
+                        </div>
+                    </div>
+
+                    <div class="checkout__info">
+                        <div class="check__title">register and save time!</div>
+                        <div class="check__text">Register with us for future convenience</div>
+                    </div>
+
+                    <div class="checkout__info checkout__info_last">
+                        <a href="#" class="checkout__link">
+                            <i class="fas fa-angle-double-right"></i>
+                            Fast and easy checkout</a>
+                        <a href="#" class="checkout__link">
+                            <i class="fas fa-angle-double-right"></i>
+                            Easy access to your order history and status
+                        </a>
+                    </div>
+
+                    <button class="checkout__btn_transparent">Continue</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <form class="checkoutForm">
+                    <div class="checkout__info">
+                        <div class="check__title">Already registed?</div>
+                        <div class="check__text">Please log in below</div>
+                    </div>
+
+                    <label class="checkout__authLabel" for="customerEmail" id="customerEmailLable">EMAIL ADDRESS
+                        <span class="checkout_attention">*</span>
+                    </label>
+                    <input class="checkout__authData" type="email" id="customerEmail">
+                    <label class="checkout__authLabel" for="customerPassword" id="customerPasswordLabel">PASSWORD
+                        <span class="checkout_attention">*</span>
+                    </label>
+                    <input class="checkout__authData" type="password" id="customerPassword">
+                    <p class="checkout_attention">
+                        <span>*</span>
+                        Required Fileds</p>
+
+                    <button class="col-6 checkout__btn_transparent">Log in</button>
+                    <a href=" #" class="col-6">Forgot Password?</a>
+                </form>
+            </div>
+        </div>
+        <div class="row rowData">
+            <div class="col-12 row__title">
+                <span>02.</span> BILLING INFORMATION
+            </div>
+        </div>
+        <div class="row rowData">
+            <div class="col-12 row__title">
+                <span>03.</span> SHIPPING INFORMATION
+            </div>
+        </div>
+        <div class="row rowData">
+            <div class="col-12 row__title">
+                <span>04.</span> SHIPPING METHOD
+            </div>
+        </div>
+        <div class="row rowData">
+            <div class="col-12 row__title">
+                <span>05.</span>PAYMENT METHOD
+            </div>
+        </div>
+        <div class="row rowData">
+            <div class="col-12 row__title">
+                <span>06.</span>ORDER REVIEW
+            </div>
+        </div>
+    </main>
+
+    <div class="subscribeWrapper">
+        <div class="subscribe container">
+            <div class="subscribe__review">
+                <img src="images/subscriber.png" class="subscribe__photo" alt="subscriber_img">
+                <div class="subscribe__info">
+                    <div class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</div>
+                    <div class="subscribe__location">
+                        <div class="subscribe__name">Bin Burhan</div>
+                        <div class="sri__loction">Dhaka, Bd</div>
+                    </div>
+                    <div class="subscribe__switcher">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <form class="subscribForm">
+
+                <div class="subscribForm__title">Subscribe</div>
+                <div class="subscribForm__text">FOR OUR NEWLETTER AND PROMOTION</div>
+
+                <input type="email" placeholder="Enter Your Email">
+                <button>Subscribe</button>
+
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container footerHead">
+
+            <div class="footerBrandWrapper">
+                <div class="logo logo_leftLocation">
+                    <img src="images/logo.png" class="logo__img" alt="logo" loading="lazy">
+                    bran<span>D</span>
+                </div>
+
+                <div class="footerText1">Objectively transition extensive data rather than cross functional
+                    solutions.
+                    Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly
+                    syndicate an expanded array of processes and cross-unit partnerships.
+                </div>
+                <div class="footerText2">
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </div>
+            </div>
+
+
+            <section class="footerNav">
+                <h3 class="footerNav__header">COMPANY</h3>
+                <nav>
+                    <a href="#" class="footerNav__link">Home </a>
+                    <a href="#" class="footerNav__link">Shop</a>
+                    <a href="#" class="footerNav__link">About</a>
+                    <a href="#" class="footerNav__link">How It Works</a>
+                    <a href="#" class="footerNav__link">Contact</a>
+                </nav>
+            </section>
+
+            <section class="footerNav">
+                <h3 class="footerNav__header">INFORMATION</h3>
+                <nav>
+                    <a href="#" class="footerNav__link">Tearms & Condition</a>
+                    <a href="#" class="footerNav__link">Privacy Policy</a>
+                    <a href="#" class="footerNav__link">How to Buy</a>
+                    <a href="#" class="footerNav__link">How to Sell</a>
+                    <a href="#" class="footerNav__link">Promotion</a>
+                </nav>
+            </section>
+
+            <section class="footerNav">
+                <h3 class="footerNav__header">SHOP CATEGORY</h3>
+                <nav>
+                    <a href="#" class="footerNav__link">Men</a>
+                    <a href="#" class="footerNav__link">Women</a>
+                    <a href="#" class="footerNav__link">Child</a>
+                    <a href="#" class="footerNav__link">Apparel</a>
+                    <a href="#" class="footerNav__link">Brows All</a>
+                </nav>
+            </section>
+
+        </div>
+
+        <div class="footerCopyright">
+            <div class="footerCopyrightWrapper container">
+                <div class="footerCopyright__text">&copy; 2020 Brand All Rights Reserved.</div>
+                <div class="footerCopyright__links">
+                    <div class="footerCopyright__link">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <div class="footerCopyright__link">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="footerCopyright__link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div class="footerCopyright__link">
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="footerCopyright__link">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
