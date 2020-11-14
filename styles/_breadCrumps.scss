@@ -1,0 +1,44 @@
+.breadCrumpsHeader {
+    height: 148px;
+    background-color: #f8f3f4;
+
+    .breadCrumpsHeaderWrapper {
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 465px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        div {
+            font-size: 24px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #f16d7f;
+        }
+
+    }
+
+    .breadcrumb {
+        background-color: inherit;
+        font-weight: 700;
+        color: #f16d7f;
+        font-size: 14px;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin: 0;
+
+        @media (max-width: 465px) {
+            padding-left: 0;
+        }
+        
+        a {
+            font-weight: 300;
+            color: #636363;       
+        }
+    }
+}
